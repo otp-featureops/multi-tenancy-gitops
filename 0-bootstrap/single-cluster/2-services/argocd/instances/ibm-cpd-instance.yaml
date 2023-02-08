@@ -28,7 +28,9 @@ spec:
       - name: spec.license.license
         value: "Enterprise"
       - name: spec.storageClass
-        value: "managed-nfs-storage"
+        value: "ocs-storagecluster-cephfs"
+      - name: spec.version
+        value: "4.6.2"
   syncPolicy:
     automated:
       prune: true
