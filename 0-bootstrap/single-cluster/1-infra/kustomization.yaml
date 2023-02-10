@@ -47,6 +47,7 @@ resources:
 #- argocd/storage.yaml
 #- argocd/infraconfig.yaml
 #- argocd/machinesets.yaml
+- argocd/namespace-airflow.yaml
 patches:
 - target:
     group: argoproj.io

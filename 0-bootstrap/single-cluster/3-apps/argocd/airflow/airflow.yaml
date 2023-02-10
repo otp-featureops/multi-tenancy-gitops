@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: airflow
+  annotations:
+    argocd.argoproj.io/sync-wave: "300"
+  labels:
+    gitops.tier.layer: applications
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: airflow
+    server: https://kubernetes.default.svc
+  project: applications
+  source:
+    chart: airflow
+    repoURL: https://airflow.apache.org
+    targetRevision: 1.8.0
+    helm:
+      releaseName: airflow
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
