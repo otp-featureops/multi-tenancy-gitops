@@ -4,8 +4,6 @@ metadata:
   name: airflow
   annotations:
     argocd.argoproj.io/sync-wave: "300"
-  labels:
-    gitops.tier.layer: applications
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
