@@ -6,7 +6,7 @@ metadata:
   labels:
     gitops.tier.layer: applications
 spec:
-  sourceRepos: []  # Populated by kustomize patches in 3-apps/kustomization.yaml
+  sourceRepos: ["https://airflow.apache.org"]  # Populated by kustomize patches in 3-apps/kustomization.yaml
   destinations:
   - namespace: ci
     server: https://kubernetes.default.svc
