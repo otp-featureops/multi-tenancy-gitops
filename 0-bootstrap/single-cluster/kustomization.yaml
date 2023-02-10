@@ -61,7 +61,7 @@ patches:
       path: /spec/sourceRepos/-
       value: https://github.com/otp-featureops/multi-tenancy-gitops-apps.git
     - op: add
-      path: /spec/source/repoURL
+      path: /spec/sourceRepos/-
       value: https://airflow.apache.org
 - target:
     group: argoproj.io
