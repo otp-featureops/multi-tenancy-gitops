@@ -63,6 +63,9 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://airflow.apache.org
+    - op: add
+      path: /spec/sourceRepos/-
+      value: https://otp-featureops.github.io/charts
 - target:
     group: argoproj.io
     kind: Application

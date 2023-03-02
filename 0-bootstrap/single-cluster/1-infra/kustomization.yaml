@@ -48,6 +48,7 @@ resources:
 #- argocd/infraconfig.yaml
 #- argocd/machinesets.yaml
 - argocd/namespace-airflow.yaml
+- argocd/namespace-databand.yaml
 patches:
 - target:
     group: argoproj.io

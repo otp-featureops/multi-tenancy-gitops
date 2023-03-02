@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: databand
+  annotations:
+    argocd.argoproj.io/sync-wave: "300"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: databand
+    server: https://kubernetes.default.svc
+  project: applications
+  source:
+    chart: databand
+    repoURL: https://otp-featureops.github.io/charts
+    targetRevision: 1.0.17
+    helm:
+      releaseName: databand-1.0.17
+      valueFiles:
+        - values.yaml
+        - values-ocp.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
