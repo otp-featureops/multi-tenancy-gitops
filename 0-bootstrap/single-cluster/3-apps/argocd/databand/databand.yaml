@@ -18,6 +18,7 @@ spec:
     helm:
       releaseName: databand-1.0.17
       valueFiles:
+      - values.yaml
       - user-values.yaml
       - values-ocp.yaml
   syncPolicy:
