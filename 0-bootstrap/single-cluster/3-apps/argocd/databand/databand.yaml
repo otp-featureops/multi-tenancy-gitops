@@ -18,9 +18,8 @@ spec:
     helm:
       releaseName: databand-1.0.17
       valueFiles:
-        - values.yaml
-        - values-ocp.yaml
+      - user-values.yaml
+      - values-ocp.yaml
   syncPolicy:
     automated:
-      prune: true
       selfHeal: true
