@@ -76,7 +76,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: airflow
     server: https://kubernetes.default.svc
-  - namespace: databand
+  - namespace: databand-system
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
