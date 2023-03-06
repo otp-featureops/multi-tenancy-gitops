@@ -16,7 +16,7 @@ spec:
     repoURL: https://otp-featureops.github.io/charts
     targetRevision: 1.0.17
     helm:
-      releaseName: databand-1.0.17
+      releaseName: databand
       valueFiles:
       - values.yaml
       - user-values.yaml
