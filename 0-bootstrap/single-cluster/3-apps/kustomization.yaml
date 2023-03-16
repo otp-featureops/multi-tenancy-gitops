@@ -31,6 +31,7 @@ resources:
 #- argocd/cp4a/cp4a.yaml
 
 # - argocd/airflow/airflow.yaml
+- argocd/airflow/airflow-test.yaml
 - argocd/databand/databand.yaml
 patches:
 - target:

@@ -26,6 +26,8 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: airflow
     server: https://kubernetes.default.svc
+  - namespace: airflow-test
+    server: https://kubernetes.default.svc
   - namespace: databand-system
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
